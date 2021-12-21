@@ -1,0 +1,591 @@
+*{
+    box-sizing: border-box;
+    font-family: "roboto";
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    background-color: #EAC926; 
+    padding: 10px;
+}
+
+.nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: rgba(32, 30, 30, 0.89);
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 15px;
+    transition: font-weight 450ms;
+}
+
+.nav-bar li:hover{
+    font-weight: bold;
+}
+
+.nav-bar{
+    display: none;
+}
+
+.boton-barras{
+    background-color: #03264C;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin:auto;
+}
+
+.copy-header{
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.logo{
+    margin: 10px;
+    width: 50%;
+}
+
+.searchbar-completo{
+    display: flex;
+    width: 50%;    
+}
+
+.search-bar{
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 2px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 40px;
+}
+
+.lupa{
+    font-size: 13px;
+    background: white;
+    padding: 2px;    
+    border: none;
+    color: #666;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.banner{
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+main{
+    background-color: #ebebeb;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 50px;
+    margin-bottom: 15px;    
+}
+
+main h2{
+    font-size: 20px;
+    text-align: center;
+    color:rgb(100, 100, 100);
+    padding-bottom: 5px;
+    position: relative;
+    right: 50px;
+    top: 4px;    
+}
+
+main .ofertas{
+    position: relative;
+    right: 82px;
+    top: 4px;    
+}
+
+.caja{
+    background-color: white;
+    border: solid 15px #ebebeb;
+    margin: 10px;
+}
+
+.image{
+    text-align: center;
+}
+
+.precio-descuento{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    border-top: solid 1px #ebebeb; 
+}
+
+.precio{
+    font-size: 18px;
+    text-align: left;
+    margin: 5px 5px 5px 15px;
+}
+
+.descuento{
+    color: #39b54a;
+    font-family: "roboto";
+    font-size: 16px;
+    text-align: left;
+    margin: 5px 5px 5px 15px;
+}
+
+.descripcion{
+    color:#666; 
+    font-family: "roboto";
+    font-size: 16px;
+    text-align: left;
+    margin: 5px 5px 5px 20px;
+}
+
+footer{
+    color:#666;
+    font-family: "roboto";
+    font-size: 15px;
+    text-align: center;    
+}
+
+#logos-foot{
+    color: #1259c3;
+    background-color: white;
+    margin-bottom: 10px; 
+    transition: color 450ms; 
+}
+
+#logos-foot:hover{
+    color: #39b54a
+}
+
+/*Formulario register*/
+
+.formulario-register{
+    box-sizing: border-box;
+    width: 350px;
+    background-color: #ebebeb; ;
+    padding: 30px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-family: "roboto";
+    box-shadow : 0px 0px 10px rgb(100, 100, 100);
+}
+
+.formulario-register h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.casillas{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 16px;
+    font-size: 15px;
+}
+
+.formulario-register h3{
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-align: left;    
+}
+
+.formulario-register h3 .perfil{
+    font-size: 18px;
+    padding-bottom: 5px;
+    text-align: left; 
+}
+
+#intereses {
+    padding-top: 10px;
+}
+
+.checksbox{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-register .boton{
+    width: 100%;
+    background-color: #1259c3;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 450ms;
+}
+
+.formulario-register .boton:hover{
+    background-color: #0022AA;
+
+}
+
+@media (min-width: 1280px){
+    .formulario-register{        
+        width: 400px;
+    }
+
+    .formulario-register h4{
+        font-size: 27px;        
+    }
+    .casillas{
+        font-size: 20px;
+    }
+
+    .formulario-register h3{
+        font-size: 23px;
+    }
+
+    .formulario-register h3 .perfil{
+        font-size: 23px;
+    }
+
+    .formulario-register .boton{
+        font-size: 21px;
+    }
+
+    label{
+        font-size: 22px;
+    }
+}
+
+/*Fin formulario register*/
+
+/*Formulario login*/
+
+.formulario-login{
+    margin: 0;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #ebebeb; ;
+    font-family: "roboto";
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.casillas-login{
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 16px;
+    font-size: 18px;
+}
+
+.formulario-login .boton-login{
+    width: 60%;
+    background-color: #1259c3;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 450ms;
+}
+
+.formulario-login .boton-login:hover{
+    background-color: #0022AA;
+}
+
+/*Fin formulario login*/
+
+@media (min-width: 361px){
+    header .top-bar{
+        width: 100%;
+    }
+
+    .top-bar-logo-serch{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;        
+    }
+
+    .searchbar-completo{
+        width: 50%;
+        padding-right: 10px;
+    }
+
+    .logo{
+        width: 160px;
+        padding: 0;
+    }
+
+    .boton-barras{
+        background-color: #03264C;
+        color: white;
+        display: block;
+        width: 50px;
+        height: 40px;
+        padding: 8px;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 17px;
+        margin: auto;
+    }
+
+    .descripcion{
+        display: none;
+        transition: display 450ms;
+    }
+
+    .caja:hover .descripcion{
+        display: flex;
+        padding-bottom: 10px;        
+    }
+
+    .descuento{
+        font-size: 13px;
+        margin: 5px 5px 5px 15px;
+    }
+
+    .image img{
+        width: 250px;
+        height: 280px;
+    }
+
+    .caja{
+        width: 300px;
+        transition: box-shadow 450ms;
+    }
+
+    .caja:hover{
+        box-shadow : 0px 0px 10px rgb(100, 100, 100);
+        border-radius: 1%;    
+    }    
+
+    .caja .precio-descuento i{
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        color: #39b54a;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position: relative;
+        right: -50px;
+        top: -31px;
+        transition: transform 450ms;        
+    }
+
+    .caja .precio-descuento i:hover{
+        transform: rotate(-90deg);
+    }
+
+    .precio-descuento{
+        height: 63px;
+    }
+
+    main h2{
+        position: relative;
+        right: 20px;
+        top: 4px;    
+    }
+    
+    main .ofertas{
+        position: relative;
+        right: 52px;
+        top: 4px;    
+    }
+}
+
+@media (min-width: 769px){
+    .top-bar{
+        text-align: right;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .nav-bar, .top-bar{
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .descuento{
+        margin: 5px 15px 5px 15px;
+    }
+
+    .logo{
+        width: 200px;
+        padding-right: 10px;
+    }
+
+    .copy-header{
+        max-width: 350px;
+        font-size: 15px;
+        text-align: right;
+    }
+
+    .boton-barras{
+        display: none;
+    }
+
+    .searchbar-completo{
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        max-width: 450px;
+    }
+
+    .search-bar{
+        font-size: 17px;
+        padding-left: 5px;
+        height: 40px;
+    }
+    
+    .search-bar{
+        font-size: 17px;
+        width: 100%;
+    }
+
+    .lupa{
+        padding: 5px;
+    }
+
+    .fa-search{
+        margin: 5px;
+    }
+
+    .nav-bar{
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .nav-bar ul{
+        display: flex;
+    }
+
+    .nav-bar li{
+        margin: 0 10px;
+    }
+
+    .descuento{
+        font-size: 15px;
+    }
+
+    main .visitas{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    main .oferta{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .caja{
+        margin: 10px 0;
+    }
+
+    main h2{
+        position: relative;
+        right: 200px;
+        top: 9px;    
+    }
+    
+    main .ofertas{
+        position: relative;
+        right: 230px;
+        top: 4px;    
+    }
+}
+
+@media (min-width: 1280px){
+    .nav-bar, .top-bar{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .logo{
+        width: 230px;
+    }
+    .top-bar{
+        align-items: center;
+        text-align: center;
+    }
+    .copy-header{
+        max-width: none;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .nav-bar li {
+        margin: 0 10px;
+    }
+    .nav-bar a {
+        font-size: 18px;
+    }
+    
+    .searchbar-completo{
+        flex-grow: revert;
+        width: 450px;
+    }
+
+    .top-bar-logo-serch{
+        width: 65%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;        
+    }
+
+    main h2{        
+        font-size: 24px;
+        position: relative;
+        right: 470px;
+        top: 10px;    
+    }
+    
+    main .ofertas{
+        position: relative;
+        right: 506px;
+        top: 4px;    
+    }
+    
+    .foot{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center; 
+        padding: 0 170px;      
+    }
+
+    .foot-indiv{
+        padding: 10px;
+    }    
+}

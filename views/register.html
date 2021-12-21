@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Mercado Liebre - Registro de usuario</title>
+    <link rel="stylesheet" href="/css/styles.css"> </link>
+  </head>
+
+  <body> 
+    <form class= "formulario-register" action="/creatucuenta" method="POST">
+      <h4>Registro de usuario </h4>
+      <input class="casillas" type="text" name="usuario" placeholder="Nombre y Apellido"/>
+      <br>
+      <input class="casillas" type="text" name="usuario" placeholder="Usuario"/>
+      <br>
+      <input class="casillas" type="email" name="email" placeholder="Correo Electrónico" required/>
+      <br>
+      <h3> Fecha de Nacimiento </h3>
+      <input class="casillas" type="date" min="1950-01-01" max="2021-12-01" name="fecha" />
+      <br>
+      <input class="casillas" type="text" name="usuario" placeholder="Domicilio"/>
+      <br>
+      <h3 class="perfil"> Perfil de Usuario </h3>
+      <label> Comprador </label>
+      <input type="radio" name="perfil" checked >  
+      <label> Vendedor </label>
+      <input type="radio" name="perfil" /> 
+      <br>
+      <h3 id= "intereses"> Intereses </h3>
+      <div class= "checksbox">
+          <div>
+               <label> Electro </label>
+               <input type="checkbox" name="combo" id="check1" value="Primero" />
+          </div>
+           <div>
+               <label> Moda </label>
+               <input type="checkbox" name="combo" id="check2" value="Segundo" />
+           <div>
+               <label> Hogar </label>
+               <input type="checkbox" name="combo" id="check3" value="Tercero" />
+           </div>
+           <div>
+               <label> Jugueteria </label>
+               <input type="checkbox" name="combo" id="check4" value="Cuarto" />
+           </div>
+           <div>
+               <label> Vida Sana </label>
+               <input type="checkbox" name="combo" id="check5" value="Quinto" />
+           </div>
+       </div>
+      <br>
+      <h3 class="titulos"> Ingresé su foto de perfil </h3>
+      <input type="file" name="archivo" accept=".jpg" />
+      <br>
+      <input class="casillas" type="password" name="clave" placeholder="Contraseña" required />
+      <input class="casillas" type="password" name="clave" placeholder="Confirme su contraseña" required />
+      <button class= "boton" type="reset"> Reiniciar </button>
+      <button class= "boton" type="submit"> Enviar </button>        
+      
+    </form>
+        
+  </body>
+
+</html>
